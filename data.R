@@ -49,11 +49,10 @@ filter(x,x[,5]==6)
 d<-filter(x,x[,5]==6)
 mean(d[,4])
 
-##Q.10 What was the maximum ozone value in the month of May(i.e Month is equal to 5)?
+##Q.9 What was the maximum ozone value in the month of May(i.e Month is equal to 5)?
 ##Ans:
 
 i<-filter(x,x[,5]==5)
 t<-is.na(i[,1])
 tt<-i[,1][!t]
 max(tt)
-
